@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+}
+/* =====================stroe button style */
+.storage{
+    width: 150px;
+    color:#000;
+    font-weight: 500;
+    cursor: pointer;
+}
+.storage:hover{
+    background-color: #000;
+    color:#fff;
+    box-shadow: 0 0 3px 3px lightblue;
+   
+}
+/*=======================delivery button style/ */
+.delivery-option{
+    width: 275px;
+    color:#000;
+    font-weight: 500;
+    cursor: pointer;
+}
+.delivery-option:hover{
+    background-color: black;
+    box-shadow: 0 0 3px 3px lightblue;
+    color:#fff;
+}
+/*=========================price table  */
+.price-table{
+    border-bottom: 1px solid #ddd;
+}
+.price-table:nth-child(7),
+.price-table:nth-child(8){ 
+    border-bottom: 2px solid #444;
+}
+/*==========================apply btn */
+.apply:hover{
+    box-shadow: 0 0 3px 3px lightblue;
+    background-color: #000;
+    color:#fff;   
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/custom.css">
+   <title>Computer Configuration</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="row">
+                <!-- left side only img -->
+                <div class="col-md-6">
+                    <img class="img-fluid mt-4" src="img/asusVivoBook.jpg" alt="">
+                </div>
+                <!-- right side -->
+                <div class="col-md-6 ps-4">
+                    <!-- header  -->
+                    <header>
+                        <h3 class="mt-5">Asus VivoBook S15 S530FN Core i5 8th Gen 15.6" Full HD Laptop With Genuine Win 10</h3>
+                        <p>Model: Asus VivoBook S15 S530FN
+                            Intel Core i5-8265U (6M Cache, 1.60 GHz up to 3.90 GHz)
+                            8GB DDR4 Ram
+                            1TB HDD + 256GB SSD
+                            NVIDIA MX150 2GB GDDR5 Graphics</p>
+                    </header>
+                        <!-- configuration  -->
+                    <section>
+                        <!-- ------------------memory -->
+                        <div>
+                            <h3 class="mt-5">Memory</h2>
+                            <input class="storage border-dark rounded px-2 py-1 " type="text" value="8GB unifield memory" disabled>
+                            <input class="storage border-dark rounded px-2 py-1" type="text" value="16GB unifield memory" disabled>
+                        </div>
+                        <!---------------------storage -->
+                        <div>
+                            <h3 class="mt-5">Storage</h2>
+                            <input class="storage border-dark rounded px-2 py-1 my-1" type="text" value="256GB SSD storage" disabled>
+                            <input class="storage border-dark rounded px-2 py-1 " type="text" value="512GB SSD storage" disabled>
+                            <input class="storage border-dark rounded px-2 py-1 " type="text" value="1TB SSD storage" disabled>
+                        </div>
+                        <!--------------------delivery option -->
+                        <div>
+                            <h3 class="mt-5">Choose your Delivery option</h2>
+                            <input class="delivery-option border-dark rounded px-2 py-1 my-2" type="text" value="Friday, Aug 25 Free prime Dellivery" disabled>
+                            <input class="delivery-option border-dark rounded px-2 py-1 " type="text" value="Friday, Aug 25 Free prime Dellivery" disabled>
+                        </div>
+                    </section>
+                     <!--------------------price calculation part -->
+                     <section class="mt-5">
+                        <div class="row row-cols-2">
+                            <h4 class="price-table pb-2 ">Best Price</h4>
+                            <h4 class="price-table pb-2 pe-4 text-end">$<span id="primary-price">1299</span> </h4>
+                            <h4 class="price-table pb-2 ">Extra Memory Cost</h4>
+                            <h4 class="price-table pb-2 pe-4 text-end">$<span id="primary-price">0</span> </h4>
+                            <h4 class="price-table pb-2 ">Extra Storage Cost</h4>
+                            <h4 class="price-table pb-2 pe-4 text-end">$<span id="primary-price">0</span> </h4>
+                            <h4 class="price-table pb-2 ">Delivery Charage</h4>
+                            <h4 class="price-table pb-2 pe-4 text-end">$<span id="primary-price">0</span> </h4>
+                            <h4 class="price-table pb-2 ">Total Price</h4>
+                            <h4 class="price-table pb-2 pe-4 text-end">$<span id="primary-price">1299</span> </h4>
+                        </div>
+                        <div class="mb-4">
+                            <p class="fs-4 mt-3">Add promo code</p>
+                            <input class="rounded border-2 p-1 ps-2 w-50" type="text">
+                            <button class=" apply btn-success p-1 px-3 rounded border-0 ">Apply</button>
+                        </div>
+                     </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="container">
+        <div class="text-center border-top pt-2 pb-4">
+            <h2>Total: $<span>1299</span></h2>
+        </div>
+
+    </section>
+   <script src="js/app.js"></script> 
+</body>
+</html>
