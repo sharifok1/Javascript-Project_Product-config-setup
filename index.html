@@ -34,21 +34,21 @@
                         <!-- ------------------memory -->
                         <div>
                             <h3 class="mt-5">Memory</h2>
-                            <input class="storage border-dark rounded px-2 py-1 " type="text" value="8GB unifield memory" disabled>
-                            <input class="storage border-dark rounded px-2 py-1" type="text" value="16GB unifield memory" disabled>
+                            <button id="free-memory" class="storage border-dark rounded py-1">8GB unifield memory</button>
+                            <button id="paid-memory" class="storage border-dark rounded py-1">16GB unifield memory</button>
                         </div>
                         <!---------------------storage -->
                         <div>
                             <h3 class="mt-5">Storage</h2>
-                            <input class="storage border-dark rounded px-2 py-1 my-1" type="text" value="256GB SSD storage" disabled>
-                            <input class="storage border-dark rounded px-2 py-1 " type="text" value="512GB SSD storage" disabled>
-                            <input class="storage border-dark rounded px-2 py-1 " type="text" value="1TB SSD storage" disabled>
+                            <button id="free-storage" class="storage border-dark rounded px-2 py-1 my-1">256GB SSD storage</button>
+                            <button id="paid-storage1" class="storage border-dark rounded px-2 py-1">512GB SSD storage</button>
+                            <button id="paid-storage2" class="storage border-dark rounded px-2 py-1">1TB SSD storage</button>
                         </div>
                         <!--------------------delivery option -->
                         <div>
                             <h3 class="mt-5">Choose your Delivery option</h2>
-                            <input class="delivery-option border-dark rounded px-2 py-1 my-2" type="text" value="Friday, Aug 25 Free prime Dellivery" disabled>
-                            <input class="delivery-option border-dark rounded px-2 py-1 " type="text" value="Friday, Aug 25 Free prime Dellivery" disabled>
+                            <button id="free-delivery" class="delivery-option border-dark rounded px-2 py-1 my-2">Friday, Aug 25 FREE prime Dellivery</button>
+                            <button id="paid-delivery" class="delivery-option border-dark rounded px-2 py-1 ">Friday, Aug 21 Dellivery charge 20$</button>
                         </div>
                     </section>
                      <!--------------------price calculation part -->
@@ -57,13 +57,13 @@
                             <h4 class="price-table pb-2 ">Best Price</h4>
                             <h4 class="price-table pb-2 pe-4 text-end">$<span id="primary-price">1299</span> </h4>
                             <h4 class="price-table pb-2 ">Extra Memory Cost</h4>
-                            <h4 class="price-table pb-2 pe-4 text-end">$<span id="primary-price">0</span> </h4>
+                            <h4 class="price-table pb-2 pe-4 text-end">$<span id="memory-cost">0</span> </h4>
                             <h4 class="price-table pb-2 ">Extra Storage Cost</h4>
-                            <h4 class="price-table pb-2 pe-4 text-end">$<span id="primary-price">0</span> </h4>
+                            <h4 class="price-table pb-2 pe-4 text-end">$<span id="storage-cost">0</span> </h4>
                             <h4 class="price-table pb-2 ">Delivery Charage</h4>
-                            <h4 class="price-table pb-2 pe-4 text-end">$<span id="primary-price">0</span> </h4>
+                            <h4 class="price-table pb-2 pe-4 text-end">$<span id="delivery-cost">0</span> </h4>
                             <h4 class="price-table pb-2 ">Total Price</h4>
-                            <h4 class="price-table pb-2 pe-4 text-end">$<span id="primary-price">1299</span> </h4>
+                            <h4 class="price-table pb-2 pe-4 text-end">$<span id="total-cost">1299</span> </h4>
                         </div>
                         <div class="mb-4">
                             <p class="fs-4 mt-3">Add promo code</p>
