@@ -62,7 +62,7 @@ paidDelivery.addEventListener('click',function(){
 
 function totalPrice(){
     const extraMemoryCost =document.getElementById('memory-cost');
-    const memoriCostAmout = parseFloat(extraMemoryCost.innerText);
+    const memoriCostAmount = parseFloat(extraMemoryCost.innerText);
     
     const extraStrogeCost =document.getElementById('storage-cost');
     const StorgeCostAmout = parseFloat(extraStrogeCost.innerText);
@@ -71,7 +71,7 @@ function totalPrice(){
     const deliveryCostAmout = parseFloat(deliveryCost.innerText);
 
     const totalPrice = document.getElementById('total-cost');
-    const totalAllPrice = memoriCostAmout+StorgeCostAmout+deliveryCostAmout+1299;
+    const totalAllPrice = memoriCostAmount+StorgeCostAmout+deliveryCostAmout+1299;
     totalPrice.innerText=totalAllPrice;
 
     const grandTotal =document.getElementById('grand-total');

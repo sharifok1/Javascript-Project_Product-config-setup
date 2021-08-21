@@ -5,7 +5,7 @@
 }
 /* =====================stroe button style */
 .storage{
-    width: 200px;
+    width: 212px;
     color:#000;
     font-weight: 500;
     cursor: pointer;
@@ -18,7 +18,7 @@
 }
 /*=======================delivery button style/ */
 .delivery-option{
-    width: 280px;
+    width: 300px;
     color:#000;
     font-weight: 500;
     cursor: pointer;
