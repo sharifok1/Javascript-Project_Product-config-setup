@@ -79,15 +79,20 @@ function totalPrice(){
 }
 function cuppon(){
 const grandTotal =document.getElementById('grand-total');
-const grandTotalAmount = parseFloat(grandTotal.innerText);
+
+const totalprice =document.getElementById('total-cost')
+const totalAmount = parseFloat(totalprice.innerText);
+
 const cuponFild = document.getElementById('cuppon-field');
 const cupponCode = cuponFild.value;
 if(cupponCode.toLowerCase()=='stevekaku'.toLowerCase()){
-    const discount = (grandTotalAmount/100)*20;
-    grandTotal.innerText = grandTotalAmount-discount
+    const discount = (totalAmount/100)*20;
+
+    grandTotal.innerText = totalAmount-discount
             }
             cuponFild.value='';    
 }
+// cupon apply buttion handeler-------------------------------------------------------------------
 document.getElementById('apply-cupon').addEventListener('click',function(){
     cuppon();
 })
