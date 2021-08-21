@@ -19,9 +19,8 @@ function updateCost(isDefult,isPaid,is512GB,is1TB,isDelivery,id){
         const extraMemoryCost = document.getElementById(id);
         extraMemoryCost.innerText = 20;
     }
-    /***********update total Price***********/
+    //***********update total Price***********------------------------
     totalPrice()
-
 }
 
 //******************freeMemory(8GB) click handeler
@@ -33,30 +32,29 @@ freeMemory.addEventListener('click',function(){
 const paidMemory =document.getElementById('paid-memory');
 paidMemory.addEventListener('click',function(){
     const updateMemory = updateCost(false,true,false,false,false,'memory-cost')
-    console.log(memoryPrice);
-    
+    console.log(memoryPrice);   
 })
-//******************free storage(256GB) click handeler
+//******************free storage(256GB) click handeler-----------------------------------------
 const freeStorage =document.getElementById('free-storage');
 freeStorage.addEventListener('click',function(){
     const defultStorage =updateCost(true,false,false,false,false,'storage-cost');
 })
-//******************512GB storage click handeler
+//******************512GB storage click handeler------------------------------------------------
 const paidStorage1 =document.getElementById('paid-storage1');
 paidStorage1.addEventListener('click',function(){
     const updateStorage1 =updateCost(false,false,true,false,false,'storage-cost')
 })
-//******************1TB storage click handeler
+//******************1TB storage click handeler--------------------------------------------------
 const paidStorage2 =document.getElementById('paid-storage2');
 paidStorage2.addEventListener('click',function(){
     const updateStorage2 =updateCost(false,false,false,true,false,'storage-cost')
 })
-//******************free delivery click handeler
+//******************free delivery click handeler------------------------------------------------
 const freeDelivery =document.getElementById('free-delivery');
 freeDelivery.addEventListener('click',function(){
     const freeDelivery = updateCost(true,false,false,false,false,'delivery-cost')
 })
-//******************paid delivery click handeler
+//******************paid delivery click handeler------------------------------------------------
 const paidDelivery =document.getElementById('paid-delivery');
 paidDelivery.addEventListener('click',function(){
     const paidDelivery = updateCost(false,false,false,false,true,'delivery-cost')
@@ -87,8 +85,8 @@ const cupponCode = cuponFild.value;
 if(cupponCode.toLowerCase()=='stevekaku'.toLowerCase()){
     const discount = (grandTotalAmount/100)*20;
     grandTotal.innerText = grandTotalAmount-discount
-    
-}
+            }
+            cuponFild.value='';    
 }
 document.getElementById('apply-cupon').addEventListener('click',function(){
     cuppon();
